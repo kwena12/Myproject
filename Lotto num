@@ -1,1 +1,14 @@
+import random
+
+def generate_lotto_numbers():
+    # Randomly sample 6 unique numbers from 1 to 49
+    numbers = random.sample(range(1, 50), 6)
+    # Sort the numbers for readability
+    numbers.sort()
+    return numbers
+
+# Generate and print lotto numbers
+if __name__ == "__main__":
+    lotto_numbers = generate_lotto_numbers()
+    print("Your lotto numbers are:", lotto_numbers)
 
